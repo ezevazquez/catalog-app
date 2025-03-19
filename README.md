@@ -56,17 +56,3 @@ NEXT_PUBLIC_SANITY_DATASET=your_dataset
 │── package.json
 │── README.md
 ```
-
-## 🔧 Fixes & Known Issues
-- **Client mismatch error:** Fixed by decoding `clientName` from the URL before validation.
-- **Undefined `product.size` issue:** Added fallback to prevent `.map()` on `null` values.
-- **Sanity images not loading:** Configured `next.config.mjs` to allow `cdn.sanity.io`.
-
-## 🏗️ Build & Deploy
-```sh
-npm run build
-npm start
-```
-
-## 🌍 Deployment
-- Can be deployed on **Vercel** for optimized Next.js performance.
